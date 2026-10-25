@@ -59,3 +59,7 @@ To update, keep the **same installed folder and browser profile**, replace the a
 Trades use virtual money only. Reference quotes can lag or differ from Fomo's trading route. Fees and slippage are configurable simulation assumptions. The simulator does not model actual routing, gas, MEV, transfer taxes, or whether a token can be sold on-chain. No observations are invented while offline or asleep.
 
 See **PRIVACY.txt** and **RELEASE-NOTES.txt** inside the ZIP for more detail. TradingView Lightweight Charts 5.2.1 is bundled locally with its Apache-2.0 license, NOTICE, and attribution.
+
+<img width="1255" height="1283" alt="image" src="https://github.com/user-attachments/assets/87b15134-89e6-43a3-8482-382d0829f6a8" />
+
+<img width="1161" height="1324" alt="paperdesk" src="https://github.com/user-attachments/assets/b0f19c72-9c98-4a69-b0fd-89cfe6c53b25" />
