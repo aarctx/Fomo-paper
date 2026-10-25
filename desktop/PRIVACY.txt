@@ -1,0 +1,40 @@
+PAPERDESK DESKTOP - DATA AND PERMISSIONS
+
+This release contains application files only. It contains no portfolio exports,
+browser profile data, saved API keys, analytics identifier, or live-trading wallet.
+Each person gets a fresh local ledger when first installed in a new browser profile.
+
+LOCAL DATA
+Portfolios, trades, settings, observed prices and optional Etherscan settings are
+saved in the extension's local browser storage. The Fomo panel and dashboard share
+that store within the same browser profile. Data is not cloud-synced.
+JSON/CSV exports are saved when you request them. API keys are excluded from exports.
+Removing the extension or clearing browser extension storage can erase this data.
+
+NETWORK REQUESTS
+DEX Screener: token contract/chain and selected pool identifiers are sent to
+https://api.dexscreener.com to obtain prices and check unusual price movements.
+Etherscan: only when you request a contract-source check, your locally entered key
+and the requested chain/contract are sent to https://api.etherscan.io.
+Providers receive normal connection information such as your IP address and govern
+their own service data. Paperdesk does not send portfolio balances, trade journals,
+notes or account names to those APIs. The app includes no analytics/reporting backend.
+Clicking optional links opens the relevant external site.
+
+FOMO ACCESS
+The content script runs only on fomo.family, fomo.fun and their www subdomains.
+It reads the public page URL to identify the token's chain and address and adds its
+own isolated paper-trading panel. It does not read wallet secrets, Fomo balances,
+cookies or Fomo's private APIs, or operate Fomo's trade buttons.
+
+PERMISSIONS
+storage: saves local portfolios and optional settings.
+unlimitedStorage: retains the paper ledger and recorded history without trimming it.
+alarms: refreshes observed prices in the background while the browser is running.
+Host access: the two quote/check API domains listed above; Fomo content-script sites.
+
+THIRD-PARTY CHARTS
+TradingView Lightweight Charts 5.2.1 is bundled locally. It is not fetched from a CDN
+and does not require a TradingView account. Its Apache-2.0 license and NOTICE are
+included as LIGHTWEIGHT-CHARTS-LICENSE.txt and LIGHTWEIGHT-CHARTS-NOTICE.txt.
+The chart and footer retain TradingView attribution.

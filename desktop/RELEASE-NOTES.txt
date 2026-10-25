@@ -1,0 +1,19 @@
+PAPERDESK DESKTOP 0.4.2
+
+This sharing package includes the current desktop application, an installation guide,
+browser icons, data/permission notes and original third-party chart licenses.
+It excludes source tests, build tools, previews, iOS files, exports and nested copies.
+
+FEATURES
+Manual Fomo paper trades; independent customizable local portfolios; fee/slippage
+settings; five-second active refresh; TradingView line/candle charts; 1m/5m/15m/1h/4h;
+CSV/JSON export; suspicious-quote checks and visible last-known-price warnings.
+
+0.4.2
+Starting cash is editable directly in Customize after trading, with a cash preview,
+minimum validation, preserved trade history and protection against conflicting edits.
+Funding changes are separated from chart gains, including after unavailable marks.
+
+INSTALLATION
+This is an unpacked Chrome/Edge extension. See START-HERE.txt or START-HERE.html.
+It has not been published to Chrome Web Store or Microsoft Edge Add-ons.

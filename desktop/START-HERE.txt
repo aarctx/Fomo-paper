@@ -1,0 +1,72 @@
+PAPERDESK DESKTOP 0.4.2
+Manual paper trading on Fomo | Chrome and Microsoft Edge
+
+INSTALL (no command line or coding tools required)
+1. Extract the entire ZIP to a folder you will keep, such as Documents/Paperdesk.
+   Do not install from inside the ZIP or delete/move that folder afterward.
+2. In Chrome, type chrome://extensions into the address bar.
+   In Edge, type edge://extensions instead.
+3. Turn on Developer mode, then select Load unpacked.
+4. Select the extracted folder containing manifest.json and this guide.
+5. Open the browser's Extensions menu and pin Paperdesk.
+   Click Paperdesk's icon to open your portfolio dashboard.
+6. Open or refresh a Fomo token page on fomo.family or fomo.fun.
+   Click Paper trade at the bottom right to open the trading panel.
+
+This is a manually installed development build, not a store-published extension.
+Browser notices about developer extensions can appear. If your work/school browser
+blocks Developer mode, use a personal browser where local extensions are allowed.
+Only install a copy from someone you trust. There is no automatic update service.
+
+FIRST TRADE
+- Start with $100 of virtual cash. Customize > Starting cash > Save changes lets
+  you choose another amount, including after trading has started.
+- Customize also changes your portfolio name, description, color, fee and slippage.
+- On a Fomo token page the panel picks up its public chain and contract address.
+  You can also paste a Fomo token URL or contract address into the dashboard.
+- Check the contract and chain, get a quote, then enter a dollar amount to paper buy.
+  A sell amount is the percentage of the position you want to sell.
+- Prices and total value refresh every five seconds while the dashboard/panel is
+  active. Line and candle charts support 1m, 5m, 15m, 1h and 4h on one row.
+- Keep the browser running to collect observations. No history is invented during
+  offline periods or while the computer is asleep. Background polling is slower.
+
+Starting-cash edits adjust available cash by the difference. For example,
+$1,000 to $1,500 adds $500. The preview shows your resulting balance and minimum.
+Trades and positions stay intact. Dollar trading P&L stays the same; percentage
+return uses the updated starting capital. Creating a separate portfolio is optional.
+
+WHAT YOU NEED
+- Chrome or Microsoft Edge on a desktop computer, and internet access for quotes.
+- No wallet connection, deposited money, Node/Python installation, or paid Fomo API.
+- No Etherscan key is needed for prices. If you want optional Etherscan contract
+  checks, enter YOUR OWN key in Settings. Never share a key with this ZIP.
+- Each browser profile has its own local portfolios. There is no account or cloud sync.
+
+KEEP YOUR DATA / UPDATE
+Export portfolios as JSON and trades as CSV from the dashboard when needed.
+Exports contain no API key. This version has no built-in import screen.
+To update, keep the SAME installed folder and browser profile. Replace that folder's
+application files with the new release, click Reload on Paperdesk's Extensions card,
+then refresh the dashboard and Fomo pages. Do not uninstall the extension to update it.
+Removing the extension or clearing its storage can erase your local portfolio data.
+
+TROUBLESHOOTING
+- No manifest found: extract the ZIP first, then select the folder that directly
+  contains manifest.json. Do not select the ZIP or app.html.
+- No Paper trade button: reload the Fomo page after installation and allow the
+  extension on supported Fomo domains in the browser's extension settings.
+- Quote unavailable: check the chain/address and connection, then retry. An extreme
+  unconfirmed quote keeps the last known mark and displays a warning. Missing marks
+  cannot create paper fills; provider prices can lag or differ from Fomo's route.
+- Cannot reduce starting cash: the minimum prevents available cash becoming negative.
+- Starting cash changed in another view: close and reopen Customize to review it.
+
+Virtual trades only. Quoted prices, fees and slippage are simulation assumptions;
+Paperdesk cannot establish that an on-chain token could actually be sold.
+See PRIVACY.txt for storage/network behavior and included third-party notices.
+
+Official browser installation instructions:
+Chrome: https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world#load-unpacked
+Edge: https://learn.microsoft.com/en-us/microsoft-edge/extensions/getting-started/extension-sideloading
+Distribution: https://developer.chrome.com/docs/extensions/how-to/distribute

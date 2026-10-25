@@ -4,11 +4,25 @@ Practice manual memecoin trades and track a virtual portfolio alongside Fomo. De
 
 ## Download
 
-**[Download Paperdesk Desktop v0.4.2](https://github.com/aarctx/Fomo-paper/raw/refs/heads/main/Paperdesk-Desktop-0.4.2.zip)**
+**[Download Paperdesk Desktop v0.4.2](https://github.com/aarctx/Fomo-paper/releases/download/v0.4.2/Paperdesk-Desktop-0.4.2.zip)**
 
 [SHA-256 checksum](Paperdesk-Desktop-0.4.2.sha256)
 
 The ZIP contains the extension, browser icons, installation guide, privacy notes, and third-party chart licenses. It contains no saved portfolios or API keys. Each browser profile starts with its own $100 virtual portfolio.
+
+## Source code
+
+The extension files are published in **[desktop/](desktop/)** so you can inspect the code before installing it. These are the same application files included in the desktop ZIP.
+
+- [manifest.json](desktop/manifest.json): requested permissions, allowed sites, and entry points.
+- [content.js](desktop/content.js): the Fomo page overlay and token URL handling.
+- [background.js](desktop/background.js), [service.js](desktop/service.js), and [market.js](desktop/market.js): background tasks, storage, and external API requests.
+- [ledger.js](desktop/ledger.js): simulated trade accounting.
+- [app.js](desktop/app.js): dashboard and trading controls.
+- [PRIVACY.txt](desktop/PRIVACY.txt): data storage and permissions.
+- [tests/](desktop/tests/): accounting, customization, quotes, charts, and storage tests. Run `npm test --prefix desktop` with Node.js 20 or newer; no dependency installation is needed.
+
+To install directly from the repository, download its source ZIP, extract it, and use **Load unpacked** to select the **desktop** folder. The bundled chart library and its license/notice are included there.
 
 ## Install
 

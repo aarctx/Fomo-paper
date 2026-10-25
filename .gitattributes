@@ -1,0 +1,3 @@
+# Preserve the published extension files exactly as packaged.
+desktop/** -text
+*.zip binary
